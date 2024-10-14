@@ -1,0 +1,104 @@
+.journal-cards-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .journal-card {
+    width: 100%;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  .journal-card-image {
+    width: 100%;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+  
+  .journal-card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .journal-card-content {
+    text-align: left;
+    color: #000000;
+    padding: 15px;
+  }
+  
+  h4 {
+    font-size: 0.9rem;
+    color: #000000;
+    text-transform: uppercase;
+  }
+  
+  h2 {
+    font-size: 1.5rem;
+    color: #000000;
+  }
+  
+  p {
+    font-size: 1rem;
+    color: #000000;
+  }
+  
+  /* Media Queries for responsiveness */
+  
+  /* For small devices (phones in portrait mode) */
+  @media (max-width: 575px) {
+    .journal-card {
+      max-width: 100%;
+    }
+    h2 {
+      font-size: 1.2rem;
+    }
+    h4 {
+      font-size: 0.8rem;
+    }
+  }
+  
+  /* For medium devices (phones in landscape mode, tablets in portrait mode) */
+  @media (min-width: 576px) and (max-width: 767px) {
+    .journal-card {
+      max-width: 80%;
+    }
+    h2 {
+      font-size: 1.3rem;
+    }
+  }
+  
+  /* For large devices (tablets in landscape mode, small laptops) */
+  @media (min-width: 768px) and (max-width: 1023px) {
+    .journal-card {
+      max-width: 45%;
+    }
+  }
+  
+  /* For extra large devices (desktops) */
+  @media (min-width: 1024px) {
+    .journal-card {
+      max-width: 30%;
+    }
+    .journal-card-image img {
+      width: 800px;
+      height: 100%;
+      object-fit: cover;
+    }
+    .journal-card-content {
+        padding: 5px;
+        margin-left: 40px;
+        width: 350px;
+
+      }
+  }
+  

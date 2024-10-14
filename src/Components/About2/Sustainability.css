@@ -1,0 +1,93 @@
+.sustainability-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 3rem 2rem;
+    color: #000000;
+    height: 100%;
+}
+
+/* Left section */
+.sustainability-heading {
+    flex: 1;
+    font-size: 2.5rem;
+    margin-right: 2rem;
+}
+
+/* Right section */
+.sustainability-text {
+    flex: 2;
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+/* Responsive styles */
+
+/* For large desktops (min-width: 1024px) */
+@media (min-width: 1024px) {
+    .sustainability-container {
+        padding: 4rem 3rem;
+    }
+
+    .sustainability-heading {
+        font-size: 1.2rem;
+    }
+
+    .sustainability-text {
+        font-size: 1.2rem;
+        width: 200px;
+    }
+}
+
+/* For tablets (min-width: 768px and max-width: 1023px) */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .sustainability-container {
+        padding: 3rem 2rem;
+    }
+
+    .sustainability-heading {
+        font-size: 1rem;
+        margin-right: 1.5rem;
+    }
+
+    .sustainability-text {
+        font-size: 0.99rem;
+        line-height: 1.6;
+    }
+}
+
+/* For mobile devices (max-width: 767px) */
+@media (max-width: 767px) {
+    .sustainability-container {
+        flex-direction: column;
+        padding: 2rem 1rem;
+        text-align: center;
+    }
+
+    .sustainability-heading {
+        margin-bottom: 0rem;
+        font-size: 1.2rem;
+    }
+
+    .sustainability-text {
+        font-size: 1rem;
+        text-align: justify;
+    }
+}
+
+/* For small mobile screens (max-width: 400px) */
+@media (max-width: 400px) {
+    .sustainability-container {
+        padding: 1.5rem 1rem;
+    }
+
+    .sustainability-heading {
+        font-size: 1rem;
+        margin-bottom: 0rem;
+    }
+
+    .sustainability-text {
+        font-size: 0.9rem;
+        line-height: 1.5;
+    }
+}

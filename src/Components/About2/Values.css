@@ -1,0 +1,81 @@
+.Values_main {
+    display: flex;
+    flex-direction: column; /* For mobile view */
+    justify-content: flex-start;
+    align-items: center; /* Center content */
+    padding: 20px; /* Add padding around the main container */
+    background-color: white; /* Background color for the main section */
+}
+
+.Values_heading {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.Values_heading h2 {
+    font-size: 2.5rem; /* Adjusted font size */
+    color: black; /* Heading color */
+    margin: 0; /* Remove default margin */
+}
+
+.Values_info {
+    width: 100%;
+    text-align: left; /* Align text to the left */
+    margin-bottom: 20px;
+}
+
+.Values_info p {
+    font-size: 1.2rem; /* Larger font for the paragraph */
+    line-height: 1.6; /* Spacing between lines */
+    color: #333; /* Text color */
+    margin-bottom: 15px; /* Space below paragraph */
+}
+
+.Values_info ol {
+    padding: 0 20px; /* Padding on the list */
+    list-style-position: inside; /* Indent list */
+}
+
+.Values_info li {
+    font-size: 1.1rem; 
+    margin-bottom: 10px; 
+}
+
+.Values_img {
+    width: 100%; 
+    max-width: 500px; 
+    height: auto;
+    margin-top: 20px; 
+}
+
+/* Responsive Design */
+@media screen and (min-width: 768px) {
+    .Values_main {
+        flex-direction: row; 
+        justify-content: space-between; 
+        align-items: flex-start; 
+    }
+
+    .Values_heading {
+        width: 30%; 
+    }
+
+    .Values_info {
+        width: 65%; 
+    }
+
+    .Values_img {
+        max-width: 400px; 
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .Values_heading h2 {
+        font-size: 3rem; 
+    }
+
+    .Values_info p {
+        font-size: 1.3rem; 
+    }
+}

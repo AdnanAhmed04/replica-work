@@ -1,0 +1,132 @@
+.essentials-banner {
+  background-image: url('https://gatsby-ecommerce-theme.netlify.app/banner2.png?imgcdn=true'); 
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  position: relative;
+  text-align: center;
+}
+
+.essentials-content h1 {
+  font-size: 3.5rem; 
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  
+
+  
+}
+
+.link {
+  color: #ffffff !important;
+  font-size: 1.1rem;
+  margin: 0 15px;
+  text-transform: uppercase;
+  text-decoration: underline;
+  cursor: pointer;
+  
+}
+
+.link:hover {
+  text-decoration: underline;
+  color: #b59F66;
+  cursor: pointer;
+}
+
+/* Add a dark overlay to improve text visibility */
+.essentials-banner::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.essentials-links{
+  z-index: 2;
+  display: flex;
+  color: white !important;
+  margin-top: 150px;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 575px) {
+  .essentials-content h1 {
+    font-size: 2rem; /* Adjusted font size for smaller screens */
+  }
+
+  .link {
+    font-size: 1rem;
+    margin: 0 8px;
+  }
+
+  .essentials-banner {
+    height: 60vh; /* Reduced height for small screens */
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+  .essentials-content h1 {
+    font-size: 3.5rem;
+  }
+
+  .link {
+    font-size: 0.8rem;
+    margin: 0 10px;
+  }
+
+  .essentials-banner {
+    height: 65vh; /* Slightly increased height for better text space */
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .essentials-content h1 {
+    font-size: 4rem; /* Larger font size for landscape tablets */
+  }
+
+  .link {
+    font-size: 0.9rem;
+    margin: 0 12px;
+  }
+
+  .essentials-banner {
+    height: 70vh; /* Increased height to fit text */
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .essentials-content h1 {
+    font-size: 3.5rem; /* Increased size for better visibility */
+  }
+
+  .link {
+    font-size: 1.2rem;
+    margin: 0 15px;
+  }
+
+  .essentials-banner {
+    height: 75vh; /* Optimized for medium-sized laptops */
+  }
+}
+
+@media (min-width: 1200px) {
+  .essentials-content h1 {
+    font-size: 4rem; /* Large font size for large screens */
+  }
+
+  .link {
+    font-size: 1.2rem;
+    margin: 0 15px;
+  }
+
+  .essentials-banner {
+    height: 80vh;
+    background-position: left top;
+  }
+}

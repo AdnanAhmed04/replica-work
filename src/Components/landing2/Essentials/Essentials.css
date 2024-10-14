@@ -1,0 +1,175 @@
+/* Main container */
+.essentials-container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  overflow-y: hidden;
+}
+
+/* Background image */
+.background-image {
+  width: 100%; /* Full width */
+  height: 100%; /* Full height of the container */
+  background-image: url('https://gatsby-ecommerce-theme.netlify.app/banner1.png?imgcdn=true');
+  background-size:cover; /* Better fit for background */
+  background-position: center; /* Center the image */
+  display: block;
+  margin: 0;
+  padding: 0;
+  margin-top: 100px;
+}
+
+/* Overlay */
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 1rem;
+}
+
+.overlay h1 {
+  font-size: 4.5vw; /* Dynamically adjusts based on viewport width */
+  margin-bottom: 1rem;
+  color: white;
+  width: 500px;
+  font-family: sans-serif;
+}
+
+.overlay p {
+  font-size: 1.2vw;
+  margin-bottom: 1rem;
+  color: white;
+}
+
+.overlay button {
+  background-color: #000000;
+  color: white;
+  border: none;
+  font-size: 0.9vw;
+  cursor: pointer;
+  width: 10vw;
+  padding: 0.8rem 1.5rem;
+  transition: background-color 0.3s ease;
+}
+
+.overlay button:hover {
+  background-color: #444;
+}
+
+/* Responsive Styling */
+
+/* Tablet devices */
+@media (max-width: 1024px) {
+  .overlay h1 {
+    font-size: 5.5vw;
+  }
+
+  .overlay p {
+    font-size: 1.4rem;
+  }
+
+  .overlay button {
+    font-size: 1.2rem;
+    width: 20vw;
+    padding: 0.7rem 1.5rem;
+  }
+}
+
+/* Mobile devices */
+@media (max-width: 768px) {
+  .essentials-container {
+    height: 80vh;
+  }
+
+  .overlay h1 {
+    font-size: 8vw;
+  }
+
+  .overlay p {
+    font-size: 1.4rem;
+  }
+
+  .overlay button {
+    font-size: 1.2rem;
+    width: 20vw;
+    padding: 1rem 1rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .essentials-container {
+    height: 80vh;
+  }
+
+  .overlay h1 {
+    font-size: 7vw;
+  }
+
+  .overlay p {
+    font-size: 1.2rem;
+  }
+
+  .overlay button {
+    font-size: .9rem;
+    width: 25vw;
+    padding: 0.9rem 1rem;
+  }
+}
+
+/* Small mobile devices */
+@media (max-width: 480px) {
+  .essentials-container {
+    height: 70vh;
+  }
+
+  .overlay h1 {
+    font-size: 10vw;
+    width: 250px;
+  }
+
+  .overlay p {
+    font-size: 1rem;
+  }
+
+  .overlay button {
+    font-size: 0.9rem;
+    width: 30vw;
+    padding: 0.6rem 1rem;
+  }
+}
+
+@media (max-width: 375px) {
+  .essentials-container {
+    height: 70vh;
+  }
+
+  .overlay h1 {
+    font-size: 9vw;
+    width: 250px;
+  }
+
+  .overlay p {
+    font-size: 0.9rem;
+  }
+
+  .overlay button {
+    font-size: 0.9rem;
+    width: 35vw;
+    padding: 0.6rem 1rem;
+  }
+  .background-image {
+  
+    background-position: left top; 
+    margin-top: 100px;
+    
+  }
+}

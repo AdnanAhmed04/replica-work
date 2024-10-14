@@ -1,0 +1,62 @@
+/* About_Sydney.css */
+
+/* Styling for the main container */
+.about-container {
+    text-align: center;
+    margin: 50px 0;
+    padding: 0 20px; /* Small padding for mobile devices */
+  }
+  
+  /* Styling for the "About Sydney" text */
+  .about-container p {
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+    color: #000000; /* Light grey color to match the faint look */
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+  }
+  
+  /* Styling for the main quote */
+  .about-container h1 {
+    font-family: 'Georgia', serif;
+    font-size: 32px;
+    font-weight: 300;
+    line-height: 1.4;
+    color: #000000; /* Light grey color to match the quote styling */
+    max-width: 700px;
+    margin: 0 auto;
+  }
+  
+  /* Responsive behavior for different screen sizes */
+  @media (max-width: 1200px) {
+    .about-container h1 {
+      font-size: 26px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .about-container h1 {
+      font-size: 24px;
+      line-height: 1.3;
+    }
+  
+    .about-container p {
+      font-size: 14px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .about-container h1 {
+      font-size: 20px;
+    }
+  
+    .about-container p {
+      font-size: 12px;
+    }
+  
+    .about-container {
+      padding: 0 15px;
+    }
+  }
+  

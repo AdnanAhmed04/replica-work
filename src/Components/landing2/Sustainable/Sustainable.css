@@ -1,0 +1,115 @@
+.banner-container {
+  position: relative;
+  width: 100vw;
+  height: 80vh;
+  background-image: url('./banner.png'); 
+  /* background-size: contain;  */
+  background-size: cover; 
+  background-position: center;
+  background-repeat: no-repeat;  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 20px; 
+  
+}
+
+.text-overlay {
+  color: white;
+  text-align: center;
+  padding: 20px;
+  border-radius: 5px;
+  max-width: 90vw; 
+}
+
+.text-overlay h1 {
+  font-size: 3.5rem;
+  margin-bottom: 20px;
+  font-family:  serif;
+  color: white;
+
+}
+
+.text-overlay p {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  /* max-width: 800px; */
+  width: 800px; 
+  color: rgb(227, 227, 227);
+}
+
+.btn-read-more {
+  background-color: #313131;
+  color: #fff;
+  border: none;
+  padding: 14px 20px;
+  cursor: pointer;
+  font-size: 0.7rem;
+  width: 150px;
+  transition: background-color 0.3s;
+}
+
+.btn-read-more:hover {
+  background-color: #555;
+}
+
+@media screen and (max-width: 1024px) {
+  .text-overlay h1 {
+    font-size: 2.7rem;
+  }
+
+  .text-overlay p {
+    font-size: 1.3rem;
+    width: 450px;
+  }
+
+  .btn-read-more {
+    padding: 8px 16px;
+    font-size: 0.95rem;
+    width: 200px;
+  }
+}
+
+@media screen and (max-width: 770px) {
+  .banner-container {
+    height: 60vh; 
+    padding: 0 10px; 
+  }
+
+  .text-overlay h1 {
+    font-size: 2.3rem;
+  }
+
+  .text-overlay p {
+    font-size: 1.3rem;
+    width: 380px; 
+  }
+
+  .btn-read-more {
+    padding: 8px 16px;
+    font-size: 0.75rem;
+    width: auto;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .banner-container {
+    height: 50vh; 
+  }
+
+  .text-overlay h1 {
+    font-size: 3rem;
+  }
+
+  .text-overlay p {
+    font-size: 1rem;
+    width: auto;
+  }
+
+  .btn-read-more {
+    padding: 6px 12px;
+    font-size: 0.7rem;
+    width: 120px;
+
+  }
+}

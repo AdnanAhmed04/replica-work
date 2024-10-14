@@ -1,0 +1,118 @@
+.Knitwear_main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    padding: 2rem;
+    flex-wrap: wrap;
+}
+
+.Knitwear_main_img1 {
+    width: 100%;
+    max-width: 550px;
+    height: auto;
+}
+.Knitwear_main_img2{
+    width: 100%;
+    max-width: 250px;
+    height: 330px;
+}
+.div2 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 1rem;
+    width: 100%;
+    max-width: 500px;
+}
+
+.div2 h1 {
+    font-size: 34px;
+    margin-bottom: 1rem;
+}
+
+.para_center {
+    font-size: 14px;
+    font-family:  sans-serif;
+    text-align: center;
+    letter-spacing: 1px;
+    margin-bottom: 1rem;
+    width: 20rem;
+    width: 400px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+}
+
+.shop_para {
+    cursor: pointer;
+    font-size: 14px;
+    color: black;
+}
+.shop_para:hover{
+    color: #b59F66;
+}
+
+@media (max-width: 1000px) {
+    .Knitwear_main {
+        gap: 0rem;
+        /* flex-direction: column; */
+        flex-wrap: wrap;
+        /* background-color: #b59F66; */
+    }
+
+    .div2 h1 {
+        font-size: 28px;
+    }
+
+    .para_center {
+        font-size: 16px;
+    }
+    .Knitwear_main_img1 {
+        width: 100%;
+        max-width: 400px;
+        height: auto;
+    }
+    .Knitwear_main_img2{
+        width: 100%;
+        max-width: 250px;
+        height: 300px;
+    }
+    
+}
+
+@media (max-width: 768px) {
+    .Knitwear_main {
+        gap: 0rem;
+        /* flex-direction: column; */
+    }
+
+    .div2 h1 {
+        font-size: 28px;
+    }
+
+    .para_center {
+        font-size: 16px;
+    }
+    
+}
+
+@media (max-width: 480px) {
+    .div2 h1 {
+        font-size: 24px;
+    }
+
+    .para_center {
+        font-size: 14px;
+    }
+
+    .shop_para {
+        font-size: 16px;
+    }
+    .Knitwear_main_img2{
+        max-width: 310px;
+        height: 330px;
+    }
+}

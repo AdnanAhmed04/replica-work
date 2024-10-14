@@ -1,0 +1,47 @@
+/* .img_div{
+    background-color: black;
+} */
+img {
+    width: 100%;
+    height: auto; 
+}
+
+/* For mobile screens (up to 480px wide) */
+@media (max-width: 480px) {
+    img {
+        width: 100%; /* Image already takes full width */
+        height: 150px; /* Maintain the aspect ratio */
+    }
+}
+@media (max-width: 430px) {
+    img {
+        width: 100%; /* Image already takes full width */
+        height: 200px; /* Maintain the aspect ratio */
+    }
+}
+
+
+/* For small tablets (481px to 768px) */
+@media (min-width: 481px) and (max-width: 768px) {
+    img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+/* For large tablets (769px to 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+    img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+/* For desktop screens (1025px and above) */
+@media (min-width: 1025px) {
+    img {
+        width: 92%;
+        height: auto;
+        padding: 3rem;
+    }
+}

@@ -1,0 +1,168 @@
+.top_div_col {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 220px;
+}
+
+.Collection_div {
+  margin: 1px;
+}
+
+.para {
+  width: 40rem;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 10px;
+  font-size: 14px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.uniq {
+  color: #B59F66;
+}
+
+.Collection_card {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.card {
+  position: relative;
+  width: 640px;
+  height: 630px;
+  margin: 1rem;
+  background-size: cover;
+  background-position: center; /* Default background position */
+  background-repeat: no-repeat;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+.card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.card-content {
+  position: absolute;
+  bottom: 80px;
+  left: 20px;
+  color: white;
+  text-align: left;
+  max-width: 90%;
+  z-index: 2;
+}
+
+.card-title {
+  font-size: 42px;
+  margin-bottom: 8px;
+  color: rgb(255, 255, 255);
+}
+
+.shop-now-link {
+  color: white;
+  text-decoration: underline;
+  font-size: 14px;
+}
+
+.image-container {
+  position: relative;
+  display: inline-block;
+}
+
+.image-container img {
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: all 0.3s ease-in-out;
+}
+
+.image-container::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0);
+  transition: background-color 0.3s ease-in-out;
+}
+
+.image-container:hover::after {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+
+@media screen and (max-width: 1020px) {
+  .card {
+    width: 30vw;
+    height: 40vh;
+    background-position: top center; /* Adjust background position */
+  }
+
+  .top_div_col {
+    height: auto;
+  }
+
+  .para {
+    width: auto;
+    font-size: 1.3rem;
+  }
+  .Collection_card{
+    flex-wrap: wrap;
+  }
+
+  .image-container img {
+    background-position: top center;
+  }
+
+}
+
+/* Responsive styling for tablets and below */
+@media screen and (max-width: 768px) {
+  .card {
+    width: 85vw;
+    height: 20vh;
+    background-position: top center; /* Adjust background position */
+  }
+
+  .top_div_col {
+    height: auto;
+  }
+
+  .para {
+    width: auto;
+    font-size: 1.3rem;
+  }
+
+  .image-container img {
+    background-position: top center;
+  }
+}
+
+/* Responsive styling for mobile devices */
+@media screen and (max-width: 480px) {
+  .card {
+    width: 85vw;
+    height: 20vh;
+    background-position: top center; /* Adjust background position */
+  }
+
+  .para {
+    width: auto;
+    font-size: 1rem;
+  }
+
+  .image-container img {
+    background-position: bottom center;
+  }
+}

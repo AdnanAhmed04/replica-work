@@ -1,0 +1,80 @@
+.brand-section {
+    background-image: url('https://gatsby-ecommerce-theme.netlify.app/about.png?imgcdn=true');
+    background-size: cover;
+    background-position: center; /* Centered background image */
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin-top: 50px;
+}
+
+.brand-content {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center; /* Center text horizontally */
+}
+
+.brand-content h2 {
+    font-size: 5rem;
+    margin-bottom: 0;
+    color: white;
+}
+
+.brand-content p {
+    font-size: 4rem;
+    margin-top: 0;
+    color: white;
+
+}
+
+/* Tablet view */
+@media screen and (max-width: 768px) {
+    .brand-section {
+        height: 100vh;
+        background-position: 100% 20%; /* Shift background slightly higher */
+    }
+
+    .brand-content h2 {
+        font-size:4rem; /* Scale heading size relative to viewport width */
+    }
+
+    .brand-content p {
+        font-size: 2.7rem;
+        width: auto;
+    }
+}
+
+/* Mobile view */
+@media screen and (max-width: 480px) {
+    .brand-section {
+        height: 60vh;
+        background-position: 90% 10vh; /* Adjust the Y-axis with vh units for better control */
+    }
+
+    .brand-content h2 {
+        font-size: 3rem;
+    }
+
+    .brand-content p {
+        font-size: 2.5rem;
+    }
+}
+
+@media screen and (max-width: 370px) {
+    .brand-section {
+        height: 60vh;
+        background-position: 90% 10vh; /* Adjust the Y-axis with vh units for better control */
+    }
+
+    .brand-content h2 {
+        font-size: 2.5rem;
+    }
+
+    .brand-content p {
+        font-size: 2rem;
+    }
+}
+

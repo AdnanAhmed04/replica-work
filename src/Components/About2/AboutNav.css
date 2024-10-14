@@ -1,0 +1,76 @@
+.nav {
+    display: flex;
+    justify-content: center;
+    /* background-color: #d25252; */
+    padding: 10px;
+    position: sticky;
+    /* border-width: 0px 0px 0.001rem 0px; top right bottom left */
+    /* border-color: rgb(149, 149, 149); */
+    /* border-style: solid;  */
+    top: 780px;
+    z-index: 1;
+    
+    
+
+  }
+  
+  .ul {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .li {
+    cursor: pointer;
+  }
+  
+  .link {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 16px;
+  }
+  
+  .section {
+    height: 100vh; /* To make each section full viewport height */
+    padding: 20px;
+  }
+
+  @media screen and (max-width: 768px) {
+    .link {
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+        font-size: 12px;
+      }
+      .ul {
+        gap: 0px;
+      }
+      .nav {
+       
+        top: 1070px;
+        
+        
+    
+      }
+
+  }
+  @media screen and (max-width: 450px) {
+    .link {
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+        font-size: 12px;
+      }
+      .ul {
+        gap: 0px;
+      }
+      .nav {
+       
+        top: 800px;
+        
+        
+    
+      }
+
+  }
