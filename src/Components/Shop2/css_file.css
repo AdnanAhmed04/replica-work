@@ -1,7 +1,7 @@
 /* General Page Styles */
 .product-list {
   width: 100%;
-  margin: 50px auto;
+  margin: 20px auto;
   padding: 40px 0;
 }
 .sub_nav{
@@ -106,7 +106,7 @@
   justify-items: center;
 }
 .Load_more{
-  width: 200px;
+  width: 200px !important;
 }
 .product-card {
   text-decoration: none;
@@ -179,6 +179,7 @@
   .para_center_product {
     font-size: 20px;
     width: 90%;
+    
   }
 
   .pro_card h2 {
@@ -210,7 +211,7 @@
   }
 
   .para_center_product {
-    font-size: 16px;
+    font-size: 20px !important;
     width: 100%;
   }
 
@@ -259,5 +260,18 @@
   }
   .product-list{
     margin-top: 80px;
+  }
+   .para_center_product {
+    font-size: 16px !important;
+    width: 95%;
+    /* padding: 15px !important; */
+  }
+  .bg-color{
+    background-color: #FCFAF6;
+    padding: 0px 0;
+    width: 100%;
+    margin: 0%;
+    height: auto;
+  
   }
 }
