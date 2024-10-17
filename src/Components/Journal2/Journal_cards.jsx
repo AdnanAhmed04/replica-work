@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import './Journal_cards.css';
 
 const cardsData = [
@@ -8,12 +9,12 @@ const cardsData = [
     subheading: 'Design',
     para:`London-based seasonal British flowers and UK producers in her beautiful and sustainable creations.
     This season, we worked with Flora to style Sunspel stores for Christmas, for which she produced eye-catching
-     sustainably sourced wreaths.`,
+     sustainably sourced`,
   },
   {
     image: 'https://gatsby-ecommerce-theme.netlify.app/blogs/blog2.png?imgcdn=true',
     altText: 'Alt text for image 2',
-    heading: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+    heading: 'It is a long estab the readable.',
     subheading: 'Design',
     para:`London-based seasonal British flowers and UK producers in her beautiful and sustainable creations.
     This season, we worked with Flora to style Sunspel stores for Christmas, for which she produced eye-catching
@@ -32,6 +33,10 @@ const cardsData = [
 
 const Journal_cards = () => {
   return (
+    <Link
+    className="card_link"
+
+    to="/friends">
     <div className="journal-cards-container">
       {cardsData.map((card, index) => (
         <div key={index} className="journal-card">
@@ -46,6 +51,8 @@ const Journal_cards = () => {
         </div>
       ))}
     </div>
+    </Link>
+    
   );
 };
 

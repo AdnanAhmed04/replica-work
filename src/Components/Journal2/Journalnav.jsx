@@ -1,19 +1,15 @@
 import React from 'react';
-import { Link } from 'react-scroll';
+
 import './JournalNav.css'; // Import the CSS file
+import { Link } from 'react-router-dom';
 
 const JournalNav = () => {
   return (
     <nav className="nav">
       <ul className="ul">
-        <li className="li">
+        <li className="journal_nav_li">
           <Link
-            activeClass="active"
-            to="all-posts"
-            spy={true}
-            smooth={true}
-            offset={-70}
-            duration={500}
+            to="/friends"
             className="link"
           >
             ALL POSTS
@@ -21,12 +17,7 @@ const JournalNav = () => {
         </li>
         <li className="li">
           <Link
-            activeClass="active"
-            to="design"
-            spy={true}
-            smooth={true}
-            offset={-70}
-            duration={500}
+            to="/friends"
             className="link"
           >
             DESIGN
@@ -34,12 +25,7 @@ const JournalNav = () => {
         </li>
         <li className="li">
           <Link
-            activeClass="active"
-            to="collaboration"
-            spy={true}
-            smooth={true}
-            offset={-70}
-            duration={500}
+            to="/friends"
             className="link"
           >
             COLLABORATION
@@ -47,12 +33,7 @@ const JournalNav = () => {
         </li>
         <li className="li">
           <Link
-            activeClass="active"
-            to="interview"
-            spy={true}
-            smooth={true}
-            offset={-70}
-            duration={500}
+            to="/friends"
             className="link"
           >
             INTERVIEW
@@ -60,12 +41,7 @@ const JournalNav = () => {
         </li>
         <li className="li">
           <Link
-            activeClass="active"
-            to="news"
-            spy={true}
-            smooth={true}
-            offset={-70}
-            duration={500}
+            to="/friends"
             className="link"
           >
             NEWS

@@ -1,6 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './css_file.css';
+import { IoIosArrowDown } from "react-icons/io";
+import { HiAdjustments } from "react-icons/hi";
+
+
 
 const products = [
   { id: 1, name: 'Relaxed-fit graphic T-shirt', price: '$13.90', colors: '2 colors', image: 'https://gatsby-ecommerce-theme.netlify.app/products/woman1.jpeg?imgcdn=true' },
@@ -14,24 +18,47 @@ const products = [
 const ProductList = () => {
   return (
     <div className="product-list">
+      <div className='sub_nav'>
+        <Link className='remove_underline' to="/">
+          <p>Home</p>
+        </Link>
+
+        <Link className='remove_underline' to="/?scroll=Arrivals">
+          <p>Women</p>
+        </Link>
+
+        <Link className='remove_underline' to="/shop">
+
+          <p>Sweaters</p>
+        </Link>
+
+      </div>
       <div className='bg-color'>
 
-      <h1>Women's Sweaters</h1>
-      <p className='para_center_product'>
-        Look to our women’s sweaters for modern takes on one-and-done dressing. From midis in bold prints to dramatic floor-sweeping styles and easy all-in-ones, our edit covers every mood.
-      </p>
+        <h1 className='shop_h1'>Women's Sweaters</h1>
+        <p className='para_center_product'>
+          Look to our women’s sweaters for modern takes on one-and-done dressing. From midis in bold prints to dramatic floor-sweeping styles and easy all-in-ones, our edit covers every mood.
+        </p>
       </div>
 
       <div className="filter-section">
-        <p>476 items</p>
-        <div className='btn_div'>
-          <p className='btn_product'>XS</p>
-          <p className='btn_product'>S</p>
-          <p className='btn_product'>M</p>
-          <p className='btn_product'>L</p>
-          <p className='btn_product'>XL</p>
-          <p className='btn_product'>XXL</p>
+        <div className='shop_row'>
+          <p>476 items</p>
+          <div className='shop_row_filter'>
+            <p className='para_row'>filter <IoIosArrowDown />
+            </p>
+            <p className='sort'>Sort by <HiAdjustments />
+
+            </p>
+
+          </div>
         </div>
+        <div className='btn_div'>
+          <p className='btn_product'>XS{'\u00A0'}{'\u00A0'}  X </p>
+          <p className='btn_product'>S{'\u00A0'} {'\u00A0'} {'\u00A0'}X </p>
+
+        </div>
+
       </div>
       <div className="products">
         {products.map((product) => (
@@ -39,9 +66,9 @@ const ProductList = () => {
             <div className='pro_card'>
               <img src={product.image} alt={product.name} />
               <div className='info'>
-              <h2>{product.name}</h2>
-              <p>{product.price}</p>
-              <p>{product.colors}</p>
+                <h2>{product.name}</h2>
+                <p>{product.price}</p>
+                <p>{product.colors}</p>
               </div>
             </div>
           </Link>

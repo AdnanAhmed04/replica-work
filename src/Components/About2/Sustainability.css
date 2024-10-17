@@ -10,8 +10,12 @@
 /* Left section */
 .sustainability-heading {
     flex: 1;
-    font-size: 2.5rem;
-    margin-right: 2rem;
+    font-size: 2.5rem !important;
+}
+.sustainability-heading h1{
+    font-size: 2.5rem !important;
+    
+
 }
 
 /* Right section */

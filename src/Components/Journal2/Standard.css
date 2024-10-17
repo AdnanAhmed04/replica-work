@@ -22,12 +22,14 @@
 .content {
   text-align: center;
   color: white;
-  height:420px;
+  height:450px;
   z-index: 1; 
   /* background-color: aqua; */
 }
 .content p {
   color: white;
+  margin-bottom: -50px;
+  margin-top: 80px;
 
 }
 .content h1 {
@@ -39,11 +41,12 @@
 }
 
 .read-story {
-  font-size: 0.8rem;
-  color: #ffffff;
+  font-size: 0.9rem;
+  color: #ffffff !important;
   text-decoration: none;
   padding: 0.75rem 1.5rem;
   transition: all 0.3s ease;
+  text-decoration: underline;
 }
 
 

@@ -11,8 +11,8 @@ const Footer = () => {
                 <div className="footer-section info">
                     <h4>Info</h4>
                     <ul>
-                        <li><a href="#">About Us</a></li>
-                        <li><a href="#">Journal</a></li>
+                        <li><a href="/about">About Us</a></li>
+                        <li><a href="/journal">Journal</a></li>
                         <li><a href="#">Privacy Policy</a></li>
                     </ul>
                 </div>
@@ -86,19 +86,23 @@ const Footer = () => {
                     {/* Payment Icons */}
                     <div className="payment-icons">
                         <div className="svg_icon">
-                        <SiAmericanexpress />
-                        <SiMastercard />
-                        <SiVisa />
+                            <SiAmericanexpress className="mastercard1" />
+                            <SiMastercard className="mastercard2" />
+                            <SiVisa className="mastercard3" />
+                            {/* <img className="icon_img" src="https://gatsby-ecommerce-theme.netlify.app/amex.png"/>
+                            <img className="icon_img" src="https://gatsby-ecommerce-theme.netlify.app/master.png"/>
+                            <img className="icon_img" src="https://gatsby-ecommerce-theme.netlify.app/visa.png"/> */}
+
                         </div>
                         <div>
-                        <p className="copyright">
-                    2024 (c) . Built by <a href="#">Matter</a>. Powered by <a href="#">JAMM™</a>.
-                </p>
+                            <p className="copyright">
+                                2024 (c) . Built by <a href="#">Matter</a>. Powered by <a href="#">JAMM™</a>.
+                            </p>
                         </div>
                     </div>
                 </div>
 
-                
+
             </div>
         </footer>
     );

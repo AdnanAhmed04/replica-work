@@ -1,4 +1,4 @@
-// Card.js
+  // Card.js
 import React from "react";
 
 const Card = ({ title, price, image, colors }) => {

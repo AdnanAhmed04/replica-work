@@ -14,14 +14,16 @@ import './App.css';
 
 import { Routes, Route } from "react-router-dom";
 
-import Header from './Components/landing2/Navbar/Header'
+import Header from './assets/Navbar/Header'
 import Footer from './Components/landing2/Footer/Footer'
-import Landing from './Components/landing2/Navbar/landing'
+import Landing from './assets/Navbar/landing'
 import About from './Components/About2/About'
 import Journal_page from './Components/Journal2/Journal'
 import ProductList from './Components/Shop2/ProductList';
 import ProductDetail from './Components/Shop2/ProductDetail';
 import Friends from './Components/Friends_of_Sydney/Friends';
+import Login from './assets/Navbar/Login'
+import Arrivals from './Components/landing2/Arrivals/Arrivals';
 
 function App() {
 
@@ -50,6 +52,10 @@ function App() {
       <Route path="/journal" element={<Journal_page />} />
       <Route path="/about" element={<About/>}/>
       <Route path="/friends" element={<Friends />} />
+      <Route path="/login" element={<Login />} />
+      <Route path="/arrival" element={<Arrivals />} />
+
+
 
       <Route path='*' element="<div className='pg404'>no page found</div>"></Route>
 

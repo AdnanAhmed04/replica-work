@@ -17,7 +17,7 @@
 
 .journal-subheading {
   font-size: 1.2rem;
-  color: #888;
+  color: #000000;
   text-decoration: none;
 
 }
@@ -63,7 +63,8 @@
 }
 
 .journal-title {
-  font-size: 1.5rem;
+  font-size: 2.2rem;
+  font-weight: lighter;
   color: #000000;
   /* margin-bottom: 15px; */
 }
@@ -79,7 +80,7 @@
   }
 
   .journal-title {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
   }
 
   .journal-grid {

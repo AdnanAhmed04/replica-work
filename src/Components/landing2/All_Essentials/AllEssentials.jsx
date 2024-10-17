@@ -5,7 +5,7 @@ const AllEssentials = () => {
   return (
     <div className="essentials-banner">
       <div className="essentials-content">
-        <h1>-50% off</h1>
+        <h1 className="off">-50% off</h1>
         <h1>All Essentials</h1>
       </div>
       <div className="essentials-links">

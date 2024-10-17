@@ -12,7 +12,7 @@ const Standard = () => {
         <p>Design
         </p>
         <h1>The new standard of Closing</h1>
-        <a href="#story" className="read-story"><u>READ STORY</u></a>
+        <a href="/friends" className="read-story"><u className="read-story">READ STORY</u></a>
       </div>
     </div>
   );

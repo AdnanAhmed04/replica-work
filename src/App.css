@@ -1,4 +1,15 @@
 /* App.css */
+*{
+  overflow-x: hidden;
+  color: black;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Merriweather';
+  color: black;
+
+}
+
 .card-container {
     display: flex;
     gap: 20px;
@@ -24,19 +35,11 @@
     padding: 40px;
   }
   
-  .detail-image {
-    width: 100%;
-    height: auto;
-    margin-bottom: 20px;
+ 
+  .heading3{
+    color: black !important;
   }
-  
-  button {
-    padding: 10px 20px;
-    background-color: black;
-    color: white;
-    border: none;
-    cursor: pointer;
-  }
+
 /* App.css */
 .card-container {
   display: flex;
@@ -78,4 +81,8 @@ button {
 }
 .pg404{
   font-size: 30rem;
+}
+.dropdown-section h3{
+  color: black;
+
 }

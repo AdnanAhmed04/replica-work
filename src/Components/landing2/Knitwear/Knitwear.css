@@ -15,7 +15,8 @@
 .Knitwear_main_img2{
     width: 100%;
     max-width: 250px;
-    height: 330px;
+    height: 300px;
+    margin-top: -50px;
 }
 .div2 {
     display: flex;
@@ -79,6 +80,7 @@
         width: 100%;
         max-width: 250px;
         height: 300px;
+        margin-top: 0px;
     }
     
 }
@@ -97,6 +99,7 @@
         font-size: 16px;
     }
     
+    
 }
 
 @media (max-width: 480px) {
@@ -112,7 +115,9 @@
         font-size: 16px;
     }
     .Knitwear_main_img2{
-        max-width: 310px;
+        max-width: 100%;
         height: 330px;
+        margin-top: 0px;
+
     }
 }

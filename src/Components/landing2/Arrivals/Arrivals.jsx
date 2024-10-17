@@ -30,7 +30,7 @@ const Arrivals = () => {
                 <h1>New Arrivals</h1>
                 <Link className='remove' to="/shop">
 
-                    <p className='remove'>VIEW ALL</p>
+                    <p className='VIEW remove'>VIEW ALL</p>
                 </Link>
             </div>
 

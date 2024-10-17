@@ -31,20 +31,20 @@
 }
 
 .text-overlay p {
-  font-size: 1.5rem;
+  font-size: 1.1rem;
   margin-bottom: 20px;
   /* max-width: 800px; */
-  width: 800px; 
+  width: 700px; 
   color: rgb(227, 227, 227);
 }
 
 .btn-read-more {
-  background-color: #313131;
+  background-color: #050505;
   color: #fff;
   border: none;
   padding: 14px 20px;
   cursor: pointer;
-  font-size: 0.7rem;
+  font-size: 0.8rem;
   width: 150px;
   transition: background-color 0.3s;
 }

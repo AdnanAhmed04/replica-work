@@ -1,22 +1,52 @@
 /* General Page Styles */
 .product-list {
-  width: 90%;
+  width: 100%;
   margin: 50px auto;
   padding: 40px 0;
-  background-color: #fff;
 }
+.sub_nav{
+  display: flex;
+  gap: 20px;
+  width: 97%;
+  margin: auto;
+}
+.remove_underline{
+  text-decoration: none;
+}
+.shop_row{
+  display: flex;
+  justify-content: space-between;
+  width: 83%;
+  margin: auto;
+  /* background-color: aqua; */
+}
+.para_row{
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  cursor: pointer;
+}
+.sort {
+  cursor: pointer;
 
-h1 {
+}
+.shop_row_filter{
+  display: flex;
+  gap: 20px;
+}
+.shop_h1 {
   text-align: center;
   color: #222;
   margin-bottom: 10px;
-  font-size: 2.5em;
+  font-size: 3em;
+  display: flex;
+  justify-content: center;
 }
 
 .para_center_product {
   text-align: center;
   color: #555;
-  font-size: 18px;
+  font-size: 16px !important;
   margin-bottom: 40px;
   max-width: 700px;
   display: flex;
@@ -24,18 +54,20 @@ h1 {
   margin: auto;
 }
 .bg-color{
-  background-color: rgb(238, 237, 237);
+  background-color: #FCFAF6;
   padding: 0px 0;
   width: 100%;
   margin: 0%;
+  height: 200px;
 
 }
 
 /* Filter Section */
 .filter-section {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: left;
+  flex-direction: column;
+  /* align-items: center; */
   margin-bottom: 40px;
   border-bottom: 1px solid #ddd;
   padding-bottom: 15px;
@@ -44,20 +76,26 @@ h1 {
 .btn_div {
   display: flex;
   gap: 10px;
+  /* background-color: aqua; */
+  width: 83%;
+  margin: auto;
   flex-wrap: wrap; /* Make buttons wrap on smaller screens */
 }
 
 .btn_product {
-  background-color: #333;
-  color: white;
-  padding: 8px 15px;
+  background-color: #e7e5e5;
+  color: rgb(0, 0, 0);
+  padding: 8px;
+  padding-left: 20px;
   border-radius: 3px;
   cursor: pointer;
   font-size: 14px;
+  border-radius: 20px;
+  width: 50px;
 }
 
 .btn_product:hover {
-  background-color: #555;
+  background-color: #ececec;
 }
 
 /* Product Cards */
@@ -150,6 +188,12 @@ h1 {
   .pro_card p {
     font-size: 16px;
   }
+  .products{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+ 
 }
 
 /* Styles for screens smaller than 768px */
@@ -180,6 +224,15 @@ h1 {
 
   .pro_card p {
     font-size: 12px;
+  }
+  .btn_product {
+  
+    width: 40px;
+  }
+  .products{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
   }
 }
 

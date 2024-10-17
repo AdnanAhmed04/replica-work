@@ -17,8 +17,21 @@
   font-size: 3.5rem; 
   font-weight: bold;
   color: rgb(255, 255, 255);
-  
+  width: fit-content;
 
+
+
+  
+}
+.off{
+  margin-bottom: -35px
+}
+.essentials-content{
+  align-items: center;
+margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
   
 }
 

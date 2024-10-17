@@ -1,0 +1,97 @@
+/* Login container styling */
+.login-container {
+  width: 350px;
+  margin: 150px auto;
+  padding: 30px;
+  border: 1px solid #ccc;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  text-align: center;
+  align-items: center;
+}
+
+/* Form title */
+h1 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* Input container styling */
+.input-container {
+  margin-bottom: 15px;
+  text-align: left;
+}
+.login_para1{
+  text-decoration: underline;
+  width: fit-content;
+  cursor: pointer;
+}
+.login_para2{
+  text-decoration: underline;
+  cursor: pointer;
+
+}
+
+
+/* Label styling */
+.input-container label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+
+/* Input field styling */
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+}
+
+/* Remember checkbox */
+.remember-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.remember-container input {
+  margin-right: 5px;
+}
+
+/* Login button */
+.Login {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  background-color:#21201f;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.Login:hover {
+  background-color: #504e4d;
+}
+
+.Create {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  background-color:#f4f3f2;
+  color: #000000;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  border: 2px solid #504e4d;
+}
+
+.Create:hover {
+  border: 1px solid #504e4d;
+}

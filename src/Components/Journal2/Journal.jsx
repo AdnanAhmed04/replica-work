@@ -8,6 +8,7 @@ import JournalNav from './Journalnav';
 
 
 import Friends from '../Friends_of_Sydney/Friends';
+import { useEffect } from 'react';
 
 const cardsData = [
   {
@@ -59,12 +60,15 @@ const cardsData = [
 ];
 
 const Journal = () => {
+  useEffect(()=>{
+    window.scrollTo(0, 0);
+  },[])
   return (
     <div>
-      {/* <Standard/>
+      <Standard/>
       <JournalNav/>
-      <Journal_cards cardsData={cardsData} /> */}
-      <Friends/>
+      <Journal_cards cardsData={cardsData} />
+      {/* <Friends/> */}
 
     </div>
   )

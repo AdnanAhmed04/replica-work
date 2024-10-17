@@ -14,7 +14,7 @@ const AboutNav = () => {
             smooth={true}
             offset={-70}
             duration={500}
-            className="link"
+            className="link_about"
           >
             HISTORY
           </Link>
@@ -27,7 +27,7 @@ const AboutNav = () => {
             smooth={true}
             offset={-70}
             duration={500}
-            className="link"
+            className="link_about"
           >
             VALUES
           </Link>
@@ -40,7 +40,7 @@ const AboutNav = () => {
             smooth={true}
             offset={-70}
             duration={500}
-            className="link"
+            className="link_about"
           >
             SUSTAINABILITY
           </Link>
