@@ -8,6 +8,7 @@ import { CiHeart } from "react-icons/ci";
 
 const products = [
     {
+        
         id: 1, img1: 'https://gatsby-ecommerce-theme.netlify.app/products/pdp1.jpeg?imgcdn=true',
         img2: 'https://gatsby-ecommerce-theme.netlify.app/products/pdp2.jpeg?imgcdn=true',
         img3: 'https://gatsby-ecommerce-theme.netlify.app/products/pdp3.jpeg?imgcdn=true',

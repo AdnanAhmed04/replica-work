@@ -41,7 +41,7 @@ const Friends = () => {
             </div>
 
             <div className="section2">
-                <h2>2. Lorem ipsum</h2>
+                <h2>2. Services</h2>
                 <p>Our Services, including but not limited to the registration of an account with us or placing of an order,
                     is not intended to be used by children under the age of 13. When a visitor indicates an age under 13,
                     the registration process for The Upside website cannot be completed, and no personally identifying

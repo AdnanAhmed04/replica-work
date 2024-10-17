@@ -22,8 +22,8 @@ const Footer = () => {
                     <h4>Support</h4>
                     <ul>
                         <li><a href="#">FAQ</a></li>
-                        <li><a href="#">Contact Us</a></li>
-                        <li><a href="#">Shipping & Returns</a></li>
+                        <li><a href="/login">Contact Us</a></li>
+                        <li><a href="/shop">Shipping & Returns</a></li>
                         <li><a href="#">How to use this theme</a></li>
                     </ul>
                 </div>
@@ -42,17 +42,17 @@ const Footer = () => {
 
                     {/* Social Media Icons */}
                     <div className="social-icons">
-                        <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
-                            <FaTwitter />
+                        <a href="#t"  rel="noopener noreferrer">
+                            <FaTwitter  className="svg_media"/>
                         </a>
-                        <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
-                            <FaFacebookF />
+                        <a href="#f"  rel="noopener noreferrer">
+                            <FaFacebookF  className="svg_media"/>
                         </a>
-                        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
-                            <FaInstagram />
+                        <a href="#i"  rel="noopener noreferrer">
+                            <FaInstagram  className="svg_media"/>
                         </a>
-                        <a href="https://youtube.com" target="_blank" rel="noopener noreferrer">
-                            <FaYoutube />
+                        <a href="#y"  rel="noopener noreferrer">
+                            <FaYoutube  className="svg_media"/>
                         </a>
                     </div>
                 </div>
@@ -75,9 +75,9 @@ const Footer = () => {
                         <div className="dropdown">
                             <label htmlFor="language">Language</label>
                             <select id="language" defaultValue="English">
-                                <option value="English">English</option>
-                                <option value="Urdu">Urdu</option>
-                                <option value="Arbic">Arbic</option>
+                                <option className="opt" value="English">English</option>
+                                <option className="opt" value="Urdu">Urdu</option>
+                                <option className="opt" value="Arbic">Arbic</option>
 
                             </select>
                         </div>
@@ -96,7 +96,7 @@ const Footer = () => {
                         </div>
                         <div>
                             <p className="copyright">
-                                2024 (c) . Built by <a href="#">Matter</a>. Powered by <a href="#">JAMM™</a>.
+                                2024 (c) . Built by <a className="lower_anchor" href="#">Matter</a>. Powered by <a className="lower_anchor" href="#">JAMM™</a>.
                             </p>
                         </div>
                     </div>
