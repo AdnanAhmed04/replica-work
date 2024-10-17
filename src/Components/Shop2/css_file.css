@@ -193,6 +193,9 @@
     justify-content: center;
     flex-wrap: wrap;
   }
+  .product-list{
+    margin-top: 100px;
+  }
  
 }
 
@@ -201,6 +204,9 @@
   h1 {
     font-size: 2em;
     margin-top: 50px;
+  }
+  .product-list{
+    margin-top: 100px;
   }
 
   .para_center_product {
@@ -250,5 +256,8 @@
 
   .btn_div {
     justify-content: center;
+  }
+  .product-list{
+    margin-top: 80px;
   }
 }

@@ -132,6 +132,8 @@
   .card {
     width: 85vw;
     height: 20vh;
+    margin: 0rem;
+
     background-position: top center; /* Adjust background position */
   }
 
@@ -154,6 +156,8 @@
   .card {
     width: 85vw;
     height: 20vh;
+    margin: 0rem;
+
     background-position: top center; /* Adjust background position */
   }
 
@@ -164,5 +168,11 @@
 
   .image-container img {
     background-position: bottom center;
+  }
+  .card-container{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
