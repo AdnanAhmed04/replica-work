@@ -1,88 +1,75 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import './Navbar.css';
-import './Navbar.module.css';
-
-
+import styles from './Navbar.module.css';
 
 const Navbar = () => {
-  const [isDropdownVisible, setDropdownVisible] = useState(false);
   const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
 
-  const handleMouseEnter = () => setDropdownVisible(true);
-  const handleMouseLeave = () => setDropdownVisible(false);
   const toggleMobileMenu = () => setMobileMenuOpen((prev) => !prev);
 
   return (
-    <nav className="navbar">
-      <div className="shipping-text">Free shipping worldwide</div>
-      <div className="navbar-content">
-        <ul className={`navbar-menu ${isMobileMenuOpen ? 'open' : ''}`}>
-          <li
-            className="navbar-item dropdown-trigger"
-            onMouseEnter={handleMouseEnter}
-            onMouseLeave={handleMouseLeave}
-          >
-            <Link to="/shop">SHOP</Link>
-            {isDropdownVisible && (
-              <div className="dropdown-menu">
-                <div className="dropdown-section">
-                  <h3 className="heading3">WOMAN</h3>
-                  <p>All Clothing</p>
-                  <p>Sweatshirts & Hoodies</p>
-                  <p>Jackets</p>
-                  <p>Trousers</p>
-                </div>
-                <div className="dropdown-section">
-                  <h3 className="heading3">MEN</h3>
-                  <p>All Clothing</p>
-                  <p>Sweatshirts & Hoodies</p>
-                  <p>Jackets</p>
-                  <p>Trousers</p>
-                  <p>Pants</p>
-                </div>
-                <div className="dropdown-section">
-                  <h3 className="heading3">ACCESSORIES</h3>
-                  <p>Caps & Scarves</p>
-                  <p>Bags</p>
-                </div>
-                <div className="dropdown-images">
-                  <img
-                    src="https://gatsby-ecommerce-theme.netlify.app/headerPic1.png"
-                    alt="Product 1"
-                  />
-                  <img
-                    src="https://gatsby-ecommerce-theme.netlify.app/headerPic2.png"
-                    alt="Product 2"
-                  />
-                </div>
+    <nav className={styles.navbar}>
+      <div className={styles.shippingText}>Free shipping world-wide</div>
+      <div className={styles.navbarContent}>
+        <ul className={`${styles.navbarMenu} ${isMobileMenuOpen ? styles.open : ''}`}>
+          <li className={`${styles.navbarItem} ${styles.dropdownTrigger}`}>
+            <Link className='reove_underline' to="/shop">SHOP</Link>
+            <div className={styles.dropdownMenu}>
+              <div className={styles.dropdownSection}>
+                <h3>WOMAN</h3>
+                <p>All Clothing</p>
+                <p>Sweatshirts & Hoodies</p>
+                <p>Jackets</p>
+                <p>Trousers</p>
               </div>
-            )}
+              <div className={styles.dropdownSection}>
+                <h3>MEN</h3>
+                <p>All Clothing</p>
+                <p>Sweatshirts & Hoodies</p>
+                <p>Jackets</p>
+                <p>Trousers</p>
+                <p>Pants</p>
+              </div>
+              <div className={styles.dropdownSection}>
+                <h3>ACCESSORIES</h3>
+                <p>Caps & Scarves</p>
+                <p>Bags</p>
+              </div>
+              <div className={styles.dropdownImages}>
+                <img
+                  src="https://gatsby-ecommerce-theme.netlify.app/headerPic1.png"
+                  alt="Product 1"
+                />
+                <img
+                  src="https://gatsby-ecommerce-theme.netlify.app/headerPic2.png"
+                  alt="Product 2"
+                />
+              </div>
+            </div>
           </li>
-          <li className="navbar-item">
-            <Link to="/journal">JOURNAL</Link>
+          <li className={styles.navbarItem}>
+            <Link className='reove_underline' to="/journal">JOURNAL</Link>
           </li>
-          <li className="navbar-item">
-            <Link to="/about">ABOUT</Link>
+          <li className={styles.navbarItem}>
+            <Link className='reove_underline' to="/about">ABOUT</Link>
           </li>
         </ul>
-        <span className="navbar-logo">SYDNEY</span>
-        <div className="hamburger-icon" onClick={toggleMobileMenu}>
+        <span className={styles.navbarLogo}>SYDNEY</span>
+        <div className={styles.hamburgerIcon} onClick={toggleMobileMenu}>
           &#9776;
         </div>
-        <div className="navbar-icons">
-          <Link className='remove_css' to="/login">
-            <span>🔍</span>          </Link>
-
-          <Link className='remove_css' to="/login">
-            <span>❤️</span>          </Link>
-
-          <Link className='remove_css' to="/login">
+        <div className={styles.navbarIcons}>
+          <Link className="remove_css" to="/login">
+            <span>🔍</span>
+          </Link>
+          <Link className='reove_underline' className="remove_css" to="/login">
+            <span>❤️</span>
+          </Link>
+          <Link className='reove_underline' className="remove_css" to="/login">
             <span>👤</span>
           </Link>
           <span>🔒</span>
         </div>
-
       </div>
     </nav>
   );

@@ -1,6 +1,6 @@
 .banner-container {
   position: relative;
-  width: 100vw;
+  width: 87vw;
   height: 80vh;
   background-image: url('./banner.png'); 
   /* background-size: contain;  */
@@ -11,7 +11,8 @@
   align-items: center;
   justify-content: center;
   padding: 0 20px; 
-  
+  overflow: hidden;
+  margin: auto;
 }
 
 .text-overlay {
