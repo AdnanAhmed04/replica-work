@@ -57,7 +57,7 @@
   }
   .nav{
     /* background-color: aqua; */
-
+border-top: 1px black solid;
   }
   
   p {
@@ -78,6 +78,9 @@
     h4 {
       font-size: 0.8rem;
     }
+      .nav{
+display: none;
+  }
   }
   
   

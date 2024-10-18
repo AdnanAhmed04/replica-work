@@ -68,7 +68,6 @@ const Journal = () => {
       <Standard/>
       <JournalNav/>
       <Journal_cards cardsData={cardsData} />
-      {/* <Friends/> */}
 
     </div>
   )
